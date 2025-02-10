@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "f4828a87-bf1f-451e-9194-f19b093d88e0",
+		"name": "SnapRecap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34256637"
+	},
+	"item": [
+		{
+			"name": "/api/User/Authentication",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNzkyODQ0NC0xNmMzLTQyMTItOGNlZi03ZTc0OWJkZjU3MDEiLCJpYXQiOiIxMi8xOC8yMDI0IDg6NDI6MjIgQU0iLCJVc2VySWQiOiJkMTNiNTY0NS1iNDkyLTRiZGUtMTljNS0wOGRkMWYzNjQ4YjYiLCJFbWFpbCI6InNsYXZpQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoic2xhdmkyIiwiZXhwIjoxNzM0NTMyOTQyLCJpc3MiOiJTbmFwUmVjYXBfQXBwX1NvZnRVbmkiLCJhdWQiOiJTbmFwUmVjYXBfV2ViQVBJX1NvZnRVbmkifQ.1C4S_Kc8oP5GJywc6mvIfF7YCidPCMmXkNfL6hPaG2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"slavi@gmail.com\",\n    \"password\": \"slavi1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://snaprecap-env.eba-cafzhs9x.eu-north-1.elasticbeanstalk.com/api/User/Authentication",
+					"protocol": "http",
+					"host": [
+						"snaprecap-env",
+						"eba-cafzhs9x",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"User",
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Recap/Create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNzkyODQ0NC0xNmMzLTQyMTItOGNlZi03ZTc0OWJkZjU3MDEiLCJpYXQiOiIxMi8xOC8yMDI0IDg6NDI6MjIgQU0iLCJVc2VySWQiOiJkMTNiNTY0NS1iNDkyLTRiZGUtMTljNS0wOGRkMWYzNjQ4YjYiLCJFbWFpbCI6InNsYXZpQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoic2xhdmkyIiwiZXhwIjoxNzM0NTMyOTQyLCJpc3MiOiJTbmFwUmVjYXBfQXBwX1NvZnRVbmkiLCJhdWQiOiJTbmFwUmVjYXBfV2ViQVBJX1NvZnRVbmkifQ.1C4S_Kc8oP5GJywc6mvIfF7YCidPCMmXkNfL6hPaG2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Recap\",\n    \"url\": \"\",\n    \"description\": \"This is new recap\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://snaprecap-env.eba-cafzhs9x.eu-north-1.elasticbeanstalk.com/api/Recap/Create",
+					"protocol": "http",
+					"host": [
+						"snaprecap-env",
+						"eba-cafzhs9x",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Recap",
+						"Create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Recap/All",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNzkyODQ0NC0xNmMzLTQyMTItOGNlZi03ZTc0OWJkZjU3MDEiLCJpYXQiOiIxMi8xOC8yMDI0IDg6NDI6MjIgQU0iLCJVc2VySWQiOiJkMTNiNTY0NS1iNDkyLTRiZGUtMTljNS0wOGRkMWYzNjQ4YjYiLCJFbWFpbCI6InNsYXZpQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoic2xhdmkyIiwiZXhwIjoxNzM0NTMyOTQyLCJpc3MiOiJTbmFwUmVjYXBfQXBwX1NvZnRVbmkiLCJhdWQiOiJTbmFwUmVjYXBfV2ViQVBJX1NvZnRVbmkifQ.1C4S_Kc8oP5GJywc6mvIfF7YCidPCMmXkNfL6hPaG2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://snaprecap-env.eba-cafzhs9x.eu-north-1.elasticbeanstalk.com/api/Recap/All",
+					"protocol": "http",
+					"host": [
+						"snaprecap-env",
+						"eba-cafzhs9x",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Recap",
+						"All"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Recap/Edit?recapId=50d5673b-d2ee-4edb-467b-08dd1f34903a",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNzkyODQ0NC0xNmMzLTQyMTItOGNlZi03ZTc0OWJkZjU3MDEiLCJpYXQiOiIxMi8xOC8yMDI0IDg6NDI6MjIgQU0iLCJVc2VySWQiOiJkMTNiNTY0NS1iNDkyLTRiZGUtMTljNS0wOGRkMWYzNjQ4YjYiLCJFbWFpbCI6InNsYXZpQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoic2xhdmkyIiwiZXhwIjoxNzM0NTMyOTQyLCJpc3MiOiJTbmFwUmVjYXBfQXBwX1NvZnRVbmkiLCJhdWQiOiJTbmFwUmVjYXBfV2ViQVBJX1NvZnRVbmkifQ.1C4S_Kc8oP5GJywc6mvIfF7YCidPCMmXkNfL6hPaG2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New title for the Recap\",\n    \"url\": \"\",\n    \"description\": \"New title for the recap\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://snaprecap-env.eba-cafzhs9x.eu-north-1.elasticbeanstalk.com/api/Recap/Edit?recapId=50d5673b-d2ee-4edb-467b-08dd1f34903a",
+					"protocol": "http",
+					"host": [
+						"snaprecap-env",
+						"eba-cafzhs9x",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Recap",
+						"Edit"
+					],
+					"query": [
+						{
+							"key": "recapId",
+							"value": "50d5673b-d2ee-4edb-467b-08dd1f34903a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Recap/Delete?recapId=50d5673b-d2ee-4edb-467b-08dd1f34903a",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKd3RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiIwNzkyODQ0NC0xNmMzLTQyMTItOGNlZi03ZTc0OWJkZjU3MDEiLCJpYXQiOiIxMi8xOC8yMDI0IDg6NDI6MjIgQU0iLCJVc2VySWQiOiJkMTNiNTY0NS1iNDkyLTRiZGUtMTljNS0wOGRkMWYzNjQ4YjYiLCJFbWFpbCI6InNsYXZpQGdtYWlsLmNvbSIsIlVzZXJOYW1lIjoic2xhdmkyIiwiZXhwIjoxNzM0NTMyOTQyLCJpc3MiOiJTbmFwUmVjYXBfQXBwX1NvZnRVbmkiLCJhdWQiOiJTbmFwUmVjYXBfV2ViQVBJX1NvZnRVbmkifQ.1C4S_Kc8oP5GJywc6mvIfF7YCidPCMmXkNfL6hPaG2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://snaprecap-env.eba-cafzhs9x.eu-north-1.elasticbeanstalk.com/api/Recap/Delete?recapId=50d5673b-d2ee-4edb-467b-08dd1f34903a",
+					"protocol": "http",
+					"host": [
+						"snaprecap-env",
+						"eba-cafzhs9x",
+						"eu-north-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"api",
+						"Recap",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "recapId",
+							"value": "50d5673b-d2ee-4edb-467b-08dd1f34903a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
