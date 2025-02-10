@@ -37,15 +37,6 @@ The `SnapRecap.postman_collection.json` file includes API test cases for the fol
 2. **Set Up Environment Variables:**
    * Create a Postman environment (e.g., "Development," "Testing").
    * Define environment variables for the base URL (`baseUrl`) and the authentication token (`token`).  The `baseUrl` should be your application's URL (e.g., `http://snaprecap-env.eba-cafzhs9x.eu-north-1.elasticbeanstalk.com`). The `token` will be obtained after successful authentication.
-   * In the "Authentication" test, in the "Tests" tab, add something like:
-     ```javascript
-     pm.test("Status code is 200", function () {
-         pm.response.to.have.status(200);
-     });
-
-     const response = pm.response.json();
-     pm.environment.set("token", response.token); // Assuming the token is in the response body like {"token": "the_token"}
-     ```
 
 3. **Run API Tests:**
    * Select the appropriate environment.
